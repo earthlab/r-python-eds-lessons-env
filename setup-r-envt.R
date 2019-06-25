@@ -17,7 +17,8 @@ packages <- c("dplyr",
               "sf",
               # 'tm',
               "stringr",
-              "widyr")
+              "widyr",
+             "microbenchmark")
 
 # iterate packages and install by name
 for (package in packages) {
