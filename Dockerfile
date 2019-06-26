@@ -1,5 +1,6 @@
-FROM continuumio/anaconda3
+FROM continuumio/miniconda3:4.6.14
 
+# We can simplify this later by using conda's R.
 RUN apt-get update \
   && apt-get install -y \
     build-essential \
@@ -16,19 +17,14 @@ COPY setup-r-envt.R setup-r-envt.R
 
 RUN Rscript setup-r-envt.R
 
-RUN conda config --add channels conda-forge
-
-RUN conda config --set channel_priority strict
-
 COPY environment.yml environment.yml
-
-RUN conda update -n base -c defaults conda
-
-RUN conda env update -n root -f environment.yml
+RUN conda config --add channels conda-forge \
+    && conda config --set channel_priority strict \
+    && conda update --all --yes \
+    && conda env update -n base -f environment.yml \
+    && conda clean --all --yes --force-pkgs-dirs
 
 RUN conda list
-
-RUN conda clean -tipsy
 
 COPY import_check.py import_check.py
 
