@@ -17,7 +17,7 @@ dependencies:
   - basemap=1.2.0
   - cartopy
   - contextily=1.0
-  - earthpy=0.6.8
+  - earthpy
   - folium=0.9.1
   - gdal
   - geojson=2.4.1
