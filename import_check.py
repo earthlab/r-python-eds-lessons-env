@@ -3,7 +3,7 @@ import earthpy
 import rasterio
 import folium
 
-# pip installaed libraries
+# pip installed libraries
 import mapboxgl
 import hydrofunctions
 import cenpy
