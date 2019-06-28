@@ -15,7 +15,7 @@ Available packages may be viewed by following each of these links:
 To run this container in an interactive session:
 
 ```
-docker run -it earthlab/r-python-eds-lessons
+docker run -it earthlab/r-python-eds-lessons-env
 ```
 
 # Contributors
