@@ -30,6 +30,7 @@ RUN conda update conda --yes \
     pyproj \
     pyqt \
     pysal \
+    r-codetools \
     r-dplyr \
     r-ff \
     r-ggmap \
@@ -44,6 +45,7 @@ RUN conda update conda --yes \
     r-rgeos \
     r-rjsonio \
     r-rmarkdown \
+    r-rsaga \
     r-rtweet \
     r-sf \
     r-stringr \
