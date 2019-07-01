@@ -65,3 +65,6 @@ RUN conda update conda --yes \
 
 COPY import_check.py import_check.py
 RUN python import_check.py
+
+COPY library_check.R library_check.R
+RUN R CMD BATCH library_check.R
