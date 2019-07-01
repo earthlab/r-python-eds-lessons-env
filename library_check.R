@@ -1,0 +1,21 @@
+packages <- c("dplyr",
+              "ff",
+              "ggplot2",
+              "ggmap",
+              "gridExtra",
+              "knitr",
+              "maps",
+              "raster",
+              "rasterVis",
+              "rgdal",
+              "rgeos",
+              "RJSONIO",
+              "rmarkdown",
+              "RSAGA",
+              "rtweet",
+              "sf",
+              # 'tm',
+              "stringr",
+              "widyr")
+
+lapply(packages, require, character.only = TRUE)
