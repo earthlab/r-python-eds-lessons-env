@@ -18,4 +18,4 @@ packages <- c("dplyr",
               "stringr",
               "widyr")
 
-lapply(packages, require, character.only = TRUE)
+lapply(packages, library, character.only = TRUE)
