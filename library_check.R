@@ -14,7 +14,7 @@ packages <- c("dplyr",
               "RSAGA",
               "rtweet",
               "sf",
-              # 'tm',
+              'tm',
               "stringr",
               "widyr")
 
