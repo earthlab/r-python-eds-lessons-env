@@ -50,6 +50,7 @@ RUN conda update conda --yes \
     r-sf \
     r-stringr \
     r-widyr \
+    r-tm \
     rasterio \
     rasterstats \
     richdem \
