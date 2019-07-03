@@ -55,6 +55,7 @@ RUN conda update conda --yes \
     r-leaflet \
     r-lubridate \
     r-rcurl \ 
+    r-ggraph \
     rasterio \
     rasterstats \
     richdem \
