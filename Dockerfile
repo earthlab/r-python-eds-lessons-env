@@ -56,6 +56,8 @@ RUN conda update conda --yes \
     r-lubridate \
     r-rcurl \ 
     r-ggraph \
+    r-ggthemes \
+    r-zoo \
     rasterio \
     rasterstats \
     richdem \
