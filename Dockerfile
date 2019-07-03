@@ -51,6 +51,10 @@ RUN conda update conda --yes \
     r-stringr \
     r-widyr \
     r-tm \
+    r-igraph \
+    r-leaflet \
+    r-lubridate \
+    r-rcurl \ 
     rasterio \
     rasterstats \
     richdem \
