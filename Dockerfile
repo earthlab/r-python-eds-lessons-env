@@ -57,6 +57,8 @@ RUN conda update conda --yes \
     r-rcurl \ 
     r-ggraph \
     r-ggthemes \
+    r-gganimate \
+    r-webshot \
     r-zoo \
     rasterio \
     rasterstats \
