@@ -39,6 +39,7 @@ RUN conda update conda --yes \
     r-knitr \
     r-maps \
     r-microbenchmark \
+    r-r.utils \
     r-raster \
     r-rastervis \
     r-rgdal \
