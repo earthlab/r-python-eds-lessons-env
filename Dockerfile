@@ -55,7 +55,7 @@ RUN conda update conda --yes \
     r-igraph \
     r-leaflet \
     r-lubridate \
-    r-rcurl \ 
+    r-rcurl \
     r-ggraph \
     r-ggthemes \
     r-gganimate \
@@ -73,6 +73,11 @@ RUN conda update conda --yes \
     && find /opt/conda/ -follow -type f -name '*.pyc' -delete \
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete \
     && conda list
+
+RUN apt-get update \
+    && wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb -P ~/Downloads \
+    && apt install ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb -y \
+    && apt-mark hold ttf-mscorefonts-installer
 
 COPY import_check.py import_check.py
 RUN python import_check.py
