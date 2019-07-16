@@ -67,6 +67,7 @@ RUN conda update conda --yes \
     scikit-image \
     scikit-learn \
     shapely \
+    textblob \
     tweepy \
     && conda clean --all --yes --force-pkgs-dirs \
     && find /opt/conda/ -follow -type f -name '*.a' -delete \
