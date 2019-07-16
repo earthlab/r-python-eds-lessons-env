@@ -2,7 +2,8 @@ FROM continuumio/miniconda3:4.6.14
 
 ENV PYTHONDONTWRITEBYTECODE=true
 
-RUN conda config --add channels conda-forge \
+RUN conda update conda --yes \
+    && conda config --add channels conda-forge \
     && conda config --set channel_priority strict \
     && conda install --yes --freeze-installed \
     python=3.7 \
