@@ -23,6 +23,7 @@ RUN conda update conda --yes \
     geopy \
     hydrofunctions \
     mapboxgl \
+    mapclassify \
     nano \
     nbclean \
     nltk \
