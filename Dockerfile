@@ -31,6 +31,7 @@ RUN conda update conda --yes \
     pyqt \
     pysal \
     r-codetools \
+    r-cyphr\
     r-dplyr \
     r-ff \
     r-ggmap \
