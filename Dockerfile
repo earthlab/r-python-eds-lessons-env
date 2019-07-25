@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=true
 RUN conda update conda --yes \
     && conda config --add channels conda-forge \
     && conda config --set channel_priority strict \
-    && conda install --yes --freeze-installed \
+    && conda install --yes \
     python=3.7 \
     r-base=3.5 \
     autopep8 \
@@ -23,6 +23,7 @@ RUN conda update conda --yes \
     geopy \
     hydrofunctions \
     mapboxgl \
+    mapclassify \
     nano \
     nbclean \
     nltk \
