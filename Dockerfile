@@ -31,13 +31,20 @@ RUN conda update conda --yes \
     pyproj \
     pyqt \
     pysal \
+    r-bookdown \
     r-codetools \
+    r-cyphr \
+    r-curl \
+    r-devtools \
     r-dplyr \
     r-ff \
     r-ggmap \
     r-ggplot2 \
     r-gridextra \
+    r-kableextra \  
     r-knitr \
+    r-lemon \
+    r-magick \
     r-maps \
     r-microbenchmark \
     r-r.utils \
@@ -47,6 +54,7 @@ RUN conda update conda --yes \
     r-rgeos \
     r-rjsonio \
     r-rmarkdown \
+    r-reshape \
     r-rsaga \
     r-rtweet \
     r-sf \
@@ -80,6 +88,9 @@ RUN apt-get update \
     && wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb -P ~/Downloads \
     && apt install ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb -y \
     && apt-mark hold ttf-mscorefonts-installer
+
+RUN ln -s /bin/tar /bin/gtar \ 
+    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
 
 COPY import_check.py import_check.py
 RUN python import_check.py
