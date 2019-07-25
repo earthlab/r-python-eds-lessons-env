@@ -89,7 +89,8 @@ RUN apt-get update \
     && apt install ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb -y \
     && apt-mark hold ttf-mscorefonts-installer
 
-RUN R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
+RUN ln -s /bin/tar /bin/gtar \ 
+    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
 
 COPY import_check.py import_check.py
 RUN python import_check.py
