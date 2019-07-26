@@ -45,6 +45,7 @@ RUN conda update conda --yes \
     r-knitr \
     r-lemon \
     r-magick \
+    r-mapdata \ 
     r-maps \
     r-microbenchmark \
     r-r.utils \
