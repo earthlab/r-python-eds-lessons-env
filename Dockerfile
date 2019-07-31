@@ -93,7 +93,7 @@ RUN apt-get update \
     && apt-mark hold ttf-mscorefonts-installer
 
 RUN ln -s /bin/tar /bin/gtar \ 
-    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
+    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" \
     && R --silent -e "devtools::install_github('oswaldosantos/ggsn', dependencies = FALSE)" 
 
 COPY import_check.py import_check.py
