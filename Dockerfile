@@ -33,6 +33,7 @@ RUN conda update conda --yes \
     pysal \
     r-bookdown \
     r-codetools \
+    r-cowplot \
     r-cyphr \
     r-curl \
     r-devtools \
@@ -48,6 +49,7 @@ RUN conda update conda --yes \
     r-magick \
     r-mapdata \ 
     r-maps \
+    r-maptools \
     r-microbenchmark \
     r-plotly \
     r-r.utils \
