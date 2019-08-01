@@ -33,11 +33,11 @@ RUN conda update conda --yes \
     pysal \
     r-bookdown \
     r-codetools \
-    r-cowplot \
     r-cyphr \
     r-curl \
     r-devtools \
     r-dplyr \
+    r-dygraphs \
     r-ff \
     r-ggmap \
     r-ggplot2 \
@@ -48,8 +48,8 @@ RUN conda update conda --yes \
     r-magick \
     r-mapdata \ 
     r-maps \
-    r-maptools \
     r-microbenchmark \
+    r-plotly \
     r-r.utils \
     r-raster \
     r-rastervis \
@@ -94,7 +94,6 @@ RUN apt-get update \
 
 RUN ln -s /bin/tar /bin/gtar \ 
     && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
-    && R --silent -e "devtools::install_github('oswaldosantos/ggsn', dependencies = FALSE)" 
 
 COPY import_check.py import_check.py
 RUN python import_check.py
