@@ -37,6 +37,7 @@ RUN conda update conda --yes \
     r-curl \
     r-devtools \
     r-dplyr \
+    r-dygraphs \
     r-ff \
     r-ggmap \
     r-ggplot2 \
@@ -48,6 +49,7 @@ RUN conda update conda --yes \
     r-mapdata \ 
     r-maps \
     r-microbenchmark \
+    r-plotly \
     r-r.utils \
     r-raster \
     r-rastervis \
