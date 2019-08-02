@@ -42,6 +42,7 @@ RUN conda update conda --yes \
     r-ff \
     r-ggmap \
     r-ggplot2 \
+    r-ggsn \
     r-gridextra \
     r-kableextra \  
     r-knitr \
