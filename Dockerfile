@@ -31,7 +31,6 @@ RUN conda update conda --yes \
     pyproj \
     pyqt \
     pysal \
-    r-bookdown \
     r-codetools \
     r-cowplot \
     r-cyphr \
@@ -44,7 +43,6 @@ RUN conda update conda --yes \
     r-ggplot2 \
     r-ggsn \
     r-gridextra \
-    r-kableextra \  
     r-knitr \
     r-lemon \
     r-magick \
@@ -60,7 +58,6 @@ RUN conda update conda --yes \
     r-rgeos \
     r-rjsonio \
     r-rmarkdown \
-    r-reshape \
     r-rsaga \
     r-rtweet \
     r-sf \
