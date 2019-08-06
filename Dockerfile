@@ -32,6 +32,7 @@ RUN conda update conda --yes \
     pyqt \
     pysal \
     r-codetools \
+    r-colorbrewer \
     r-cowplot \
     r-cyphr \
     r-curl \
