@@ -72,6 +72,7 @@ RUN conda update conda --yes \
     r-ggraph \
     r-ggthemes \
     r-gganimate \
+    r-readr \
     r-webshot \
     r-zoo \
     rasterio \
