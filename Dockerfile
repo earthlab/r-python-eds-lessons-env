@@ -14,7 +14,7 @@ RUN conda update conda --yes \
     cenpy \
     climata \
     contextily \
-    earthpy \
+    earthpy >=0.8 \
     elevation \
     folium \
     geocoder \
