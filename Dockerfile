@@ -14,12 +14,12 @@ RUN conda update conda --yes \
     cenpy \
     climata \
     contextily \
-    earthpy >=0.8 \
+    earthpy \
     elevation \
     folium \
     geocoder \
     geojson \
-    geopandas \
+    geopandas >=0.7 \
     geopy \
     hydrofunctions \
     mapboxgl \
