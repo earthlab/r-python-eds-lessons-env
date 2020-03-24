@@ -18,7 +18,7 @@ RUN conda update conda --yes \
     earthpy \
     elevation \
     folium \
-    branca=0.3.1 \ # Temp fix for folium maps
+    branca=0.3.1 \
     geocoder \
     geojson \
     geopandas \
