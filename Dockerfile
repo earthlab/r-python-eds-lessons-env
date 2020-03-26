@@ -21,7 +21,7 @@ RUN conda update conda --yes \
     branca=0.3.1 \
     geocoder \
     geojson \
-    geopandas \
+    geopandas=>0.7.0 \
     geopy \
     hydrofunctions \
     mapboxgl \
@@ -49,7 +49,7 @@ RUN conda update conda --yes \
     r-knitr \
     r-lemon \
     r-magick \
-    r-mapdata \ 
+    r-mapdata \
     r-maps \
     r-maptools \
     r-microbenchmark \
@@ -96,8 +96,8 @@ RUN apt-get update \
     && apt install ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb -y \
     && apt-mark hold ttf-mscorefonts-installer
 
-RUN ln -s /bin/tar /bin/gtar \ 
-    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)" 
+RUN ln -s /bin/tar /bin/gtar \
+    && R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)"
 
 COPY import_check.py import_check.py
 RUN python import_check.py
