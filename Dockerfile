@@ -9,7 +9,6 @@ RUN conda update conda --yes \
     python=3.7 \
     r-base=3.5 \
     autopep8 \
-    basemap \
     cartopy \
     cenpy \
     climata \
@@ -21,7 +20,7 @@ RUN conda update conda --yes \
     branca=0.3.1 \
     geocoder \
     geojson \
-    geopandas=>0.7.0 \
+    geopandas \
     geopy \
     hydrofunctions \
     mapboxgl \
