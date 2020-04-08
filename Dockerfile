@@ -28,7 +28,7 @@ RUN conda update conda --yes \
     nano \
     nbclean \
     nltk \
-    papermill>2.0.0 \
+    papermill=>2.1.0 \
     pyproj \
     pyqt \
     pysal \
