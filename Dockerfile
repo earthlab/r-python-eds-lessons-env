@@ -14,7 +14,7 @@ RUN conda update conda --yes \
     climata \
     contextily \
     descartes \
-    earthpy \
+    earthpy>=0.9.2 \
     elevation \
     folium \
     branca=0.3.1 \
