@@ -6,7 +6,7 @@ RUN conda update conda --yes \
     && conda config --add channels conda-forge \
     && conda config --set channel_priority strict \
     && conda install --yes \
-    python=3.7 \
+    python=3.8 \
     r-base=3.5 \
     autopep8 \
     cartopy \
