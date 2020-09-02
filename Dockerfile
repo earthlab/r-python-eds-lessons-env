@@ -83,6 +83,7 @@ RUN conda update conda --yes \
     scikit-learn \
     shapely \
     textblob \
+    traitlets>4.4 \
     tweepy \
     && conda clean --all --yes --force-pkgs-dirs \
     && find /opt/conda/ -follow -type f -name '*.a' -delete \
