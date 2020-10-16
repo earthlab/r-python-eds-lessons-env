@@ -7,7 +7,7 @@ RUN conda update conda --yes \
     && conda config --set channel_priority strict \
     && conda install --yes \
     python=3.8 \
-    r-base=3.5 \
+    r-base=3.6 \
     autopep8 \
     cartopy \
     cenpy \
@@ -31,6 +31,7 @@ RUN conda update conda --yes \
     netcdf4 \
     nltk \
     papermill=>2.1.0 \
+    proj>=7 \
     pyproj \
     pyqt \
     pysal \

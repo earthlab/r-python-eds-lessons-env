@@ -2,6 +2,7 @@
 import earthpy
 import rasterio
 import folium
+import cartopy
 
 # pip installed libraries
 import mapboxgl
