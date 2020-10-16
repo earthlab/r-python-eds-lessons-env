@@ -27,6 +27,8 @@ RUN conda update conda --yes \
     mapclassify \
     nano \
     nbclean \
+    nc-time-axis \
+    netcdf4 \
     nltk \
     papermill=>2.1.0 \
     pyproj \
@@ -85,6 +87,7 @@ RUN conda update conda --yes \
     textblob \
     traitlets>4.4 \
     tweepy \
+    xarray \ 
     && conda clean --all --yes --force-pkgs-dirs \
     && find /opt/conda/ -follow -type f -name '*.a' -delete \
     && find /opt/conda/ -follow -type f -name '*.pyc' -delete \
