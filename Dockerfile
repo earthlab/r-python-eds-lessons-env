@@ -31,6 +31,7 @@ RUN conda update conda --yes \
     netcdf4 \
     nltk \
     papermill=>2.1.0 \
+    proj>=7 \
     pyproj \
     pyqt \
     pysal \
