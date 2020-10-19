@@ -81,7 +81,7 @@ RUN conda update conda --yes \
     r-zoo \
     rasterio \
     rasterstats \
-    regionmast \ 
+    regionmask \ 
     richdem \
     scikit-image \
     scikit-learn \
@@ -89,7 +89,7 @@ RUN conda update conda --yes \
     textblob \
     traitlets>4.4 \
     tweepy \
-    xarray \ 
+    xarray \
     && conda clean --all --yes --force-pkgs-dirs \
     && find /opt/conda/ -follow -type f -name '*.a' -delete \
     && find /opt/conda/ -follow -type f -name '*.pyc' -delete \
