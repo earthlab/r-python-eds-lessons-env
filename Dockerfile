@@ -81,6 +81,7 @@ RUN conda update conda --yes \
     r-zoo \
     rasterio \
     rasterstats \
+    regionmast \ 
     richdem \
     scikit-image \
     scikit-learn \
