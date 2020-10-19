@@ -30,7 +30,7 @@ RUN conda update conda --yes \
     nc-time-axis \
     netcdf4 \
     nltk \
-    papermill>=2.1.0 \
+    papermill=2.1.2 \
     proj>=7 \
     pyproj \
     pyqt \
