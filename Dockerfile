@@ -27,10 +27,11 @@ RUN conda update conda --yes \
     mapclassify \
     nano \
     nbclean \
+    nbconvert=5.6.1 \
     nc-time-axis \
     netcdf4 \
     nltk \
-    papermill=2.1.2 \
+    papermill \
     proj>=7 \
     pyproj \
     pyqt \
@@ -87,7 +88,7 @@ RUN conda update conda --yes \
     scikit-learn \
     shapely \
     textblob \
-    traitlets>4.4 \
+    traitlets=4.3.3 \
     tweepy \
     xarray \
     && conda clean --all --yes --force-pkgs-dirs \
