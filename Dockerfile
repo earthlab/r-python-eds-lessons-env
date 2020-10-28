@@ -84,6 +84,7 @@ RUN conda update conda --yes \
     rasterstats \
     regionmask \ 
     richdem \
+    rioxarray \
     scikit-image \
     scikit-learn \
     shapely \
