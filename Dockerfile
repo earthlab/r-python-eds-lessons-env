@@ -5,8 +5,8 @@ ENV PYTHONDONTWRITEBYTECODE=true
 RUN conda update conda --yes \
     && conda config --add channels conda-forge \
     && conda config --set channel_priority strict \
+    && conda install --yes python=3.8 \
     && conda install --yes \
-    python=3.8 \
     r-base>=4.0 \
     autopep8 \
     cartopy \
