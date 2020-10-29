@@ -82,7 +82,7 @@ RUN conda update conda --yes \
     r-zoo \
     rasterio \
     rasterstats \
-    regionmask \ 
+    regionmask \
     richdem \
     scikit-image \
     scikit-learn \
