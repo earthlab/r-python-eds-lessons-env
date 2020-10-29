@@ -2,9 +2,9 @@ FROM continuumio/miniconda3:4.6.14
 
 ENV PYTHONDONTWRITEBYTECODE=true
 
-RUN conda update conda --yes \
-    && conda config --add channels conda-forge \
+RUN conda config --add channels conda-forge \
     && conda config --set channel_priority strict \
+    && conda update --yes conda \
     && conda install --yes \
     python=3.8 \
     r-base>=4.0 \
@@ -82,7 +82,7 @@ RUN conda update conda --yes \
     r-zoo \
     rasterio \
     rasterstats \
-    regionmask \ 
+    regionmask \
     richdem \
     scikit-image \
     scikit-learn \
