@@ -84,6 +84,7 @@ RUN conda config --add channels conda-forge \
     rasterstats \
     regionmask \
     richdem \
+    rioxarray \
     scikit-image \
     scikit-learn \
     shapely \
