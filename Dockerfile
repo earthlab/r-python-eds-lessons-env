@@ -17,7 +17,8 @@ RUN echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate EDS" >> ~/.bas
 RUN apt-get update \
     && wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb -P ~/Downloads \
     && apt install ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb -y \
-    && apt-mark hold ttf-mscorefonts-installer
+    && apt-mark hold ttf-mscorefonts-installer \
+    && apt install -y openssh-client git
 
 RUN ln -s /bin/tar /bin/gtar \
     && ${CONDA_DIR}/envs/EDS/bin/R --silent -e "devtools::install_github('earthlab/qtoolkit', dependencies = FALSE)"
