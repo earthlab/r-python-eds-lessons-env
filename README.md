@@ -10,9 +10,9 @@ Available packages can be [viewed in the environment.yml file](https://github.co
 
 # How to Update the Environment
 
-Notes: 
+Notes:
 * instead of using the miniconda it uses the miniforge one that is smaller 182.24.37 MB to 100.92 MB, it is configured to conda-forge packages
-* packages are stored in the EDS environment. 
+* packages are stored in the EDS environment.
 * there are two files with packages, the environment.yml, which is just a normal env file, and the conda-linux-64.lock. The lock file will, hopefully, solve dependency resolution problems.
 * The lockfile is created with `conda-lock -f environment.yml -p linux-64`. So now, instead of updating the packages with every new build of your image, they'll only update when you run that command and update the lock file locally. This will make it easier to track what changed and where the problems are. This dual file config is also nice b/c you have the high level "user" env file and the low level "machine" file.
 
@@ -20,9 +20,10 @@ Also, as a side effect, the solve is run only once when creating the lock file l
 
 ## How to Update
 
-1. Update the environment file with the new packages of your choice
-2. run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
-3. open a new PR with  this new files (lock file and environment.yml file)
+1. Install conda-lock if you don't already have it: `conda install -c conda-forge conda-lock`
+2. Update the environment file with the new packages of your choice
+3. run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
+4. open a new PR with  this new files (lock file and environment.yml file)
 
 # How to use the docker container
 
