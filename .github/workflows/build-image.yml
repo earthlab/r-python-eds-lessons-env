@@ -1,16 +1,16 @@
-name: build-image
-
-on:
-  push:
-    branches: *
-
-jobs:
-  multi-builders:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        uses: docker/setup-buildx-action@v1
-        id: builder1
-      -
-        name: Builder 1 name
-        run: echo ${{ steps.builder1.outputs.name }}
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
