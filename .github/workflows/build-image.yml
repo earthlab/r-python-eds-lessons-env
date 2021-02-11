@@ -1,5 +1,10 @@
 # action.yml
-name: 'Hello World'
+name: 'Build Image'
+on:
+  push:
+    branches:
+      - '*'
+
 description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
