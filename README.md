@@ -4,7 +4,7 @@
 
 # r-python-eds-lessons
 
-Docker container with [Miniconda 3](https://docs.conda.io/en/latest/miniconda.html) and `R` that builds lessons for the [Earth Data Science learning portal](https://www.earthdatascience.org).
+Docker container with [Miniforge 3](https://github.com/conda-forge/miniforge) and `R` that builds lessons for the [Earth Data Science learning portal](https://www.earthdatascience.org).
 
 Available packages can be [viewed in the environment.yml file](https://github.com/earthlab/r-python-eds-lessons/environment.yml).
 
