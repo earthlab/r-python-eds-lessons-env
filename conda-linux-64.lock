@@ -1,7 +1,7 @@
 # platform: linux-64
 # env_hash: 20ee4f7f7db53383e18b3c9595fc9f0c71dc1a03d10de22413d080310024adf4
 @EXPLICIT
-Xhttps://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2#d7c89558ba9fa0495403155b64376d81
+https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2#d7c89558ba9fa0495403155b64376d81
 https://conda.anaconda.org/conda-forge/noarch/_r-mutex-1.0.1-anacondar_1.tar.bz2#19f9db5f4f1b7f5ef5f6d67207f25f38
 https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2020.12.5-ha878542_0.tar.bz2#7eb5d4ffeee663caa1635cd67071bc1b
 https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2#0c96522c6bdaed4b1566d11387caaf45
