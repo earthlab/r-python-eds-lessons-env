@@ -1,10 +1,10 @@
 # This build will only build the image on any branch (besides main) where there is a push
-name: CI to Docker Hub
+name: Build Docker Image
 
 on:
   push:
     branches:
-      - '!main'
+      - '*'
 
 jobs:
   main:
