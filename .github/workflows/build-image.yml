@@ -2,7 +2,8 @@ name: CI to Docker Hub
 
 on:
   push:
-    branches: *
+    branches:
+      - '*'
 
   steps:
     - name: Login to DockerHub
