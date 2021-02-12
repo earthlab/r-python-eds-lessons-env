@@ -4,11 +4,10 @@ name: Push to Docker Hub from Main Branch
 
 on:
   push:
-    branches:
-      - main
+    branches: main
 
 jobs:
-  main:
+  build-push-image:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
