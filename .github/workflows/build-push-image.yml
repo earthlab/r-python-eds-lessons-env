@@ -1,10 +1,11 @@
 # This build will build and push the image to docker hub upon a commit to the
 # main  branch only
-name: CI to Docker Hub
+name: Push to Docker Hub from Main Branch
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   main:
