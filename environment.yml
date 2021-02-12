@@ -29,7 +29,7 @@ dependencies:
   - nltk
   - papermill
   - proj>=7
-  - pyproj
+  - pyproj>=3.0
   - pyqt
   - pysal
   - r-codetools
