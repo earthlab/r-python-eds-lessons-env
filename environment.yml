@@ -80,7 +80,7 @@ dependencies:
   - rasterstats
   - regionmask
   - richdem
-  - rioxarray
+  - rioxarray>=0.3.0
   - scikit-image
   - scikit-learn
   - shapely
