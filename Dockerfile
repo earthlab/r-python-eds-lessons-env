@@ -1,4 +1,4 @@
-FROM condaforge/miniforge3:latest
+FROM condaforge/miniforge3:4.9.2-7
 
 COPY conda-linux-64.lock conda-linux-64.lock
 
