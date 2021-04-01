@@ -4,7 +4,7 @@ name: Push to Docker Hub from Main Branch
 
 on:
   push:
-    branches: main
+    branches: *
     tags:
       - "*.*"
 
