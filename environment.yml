@@ -28,6 +28,7 @@ dependencies:
   - netcdf4
   - nltk
   - papermill
+  - plotly
   - proj>=7
   - pyproj>=3.0
   - pyqt

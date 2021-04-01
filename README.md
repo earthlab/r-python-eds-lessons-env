@@ -20,10 +20,10 @@ Also, as a side effect, the solve is run only once when creating the lock file l
 
 ## How to Update
 
-1. Install conda-lock if you don't already have it: `conda install -c conda-forge conda-lock`
+1. Install `conda-lock` if you don't already have it: `conda install -c conda-forge conda-lock`
 2. Update the environment file with the new packages of your choice
-3. run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
-4. open a new PR with  this new files (lock file and environment.yml file)
+3. Run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
+4. Open a new PR with  this new files (lock file and environment.yml file)
 
 # How to use the docker container
 
