@@ -5,7 +5,6 @@ import folium
 import cartopy
 
 # pip installed libraries
-import mapboxgl
 import hydrofunctions
 import cenpy
 import climata
