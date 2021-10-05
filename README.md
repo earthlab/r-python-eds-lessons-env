@@ -44,20 +44,29 @@ Once the image builds successfully locally, you are ready to open a pull request
 on GitHub.
 4. **Open a new pull request on GitHub** with the updated `environment.yml` and `conda-lock` files.
 
-## Test the Docker container locally
+## Notes on Updating this Environment
+This environment mixes r and python package to support our build. Because of the
+number of packages, sometimes you can get conflicts when you build it. Because
+of that it's generally a good idea to begin any updates that you need to
+support lessons as soon as you can. If there are conflicts that don't seem to
+be easily resolved, the  next step is to go to the **conda-forge** organization
+on GitHub and post an issues in the feedstock for the package that is throwing
+errors. You can link to the broken build on GitHub for the maintainers to see
+what is causing the issue.  
 
-# How to use the docker container
+# How to use the docker container by Pulling from DockerHub
 
-To run this container in an interactive session:
+To run this container in an interactive session using a built version on dockerhub:
 
 ```
-docker run -it earthlab/r-python-eds-lessons-env
+$ docker run -it earthlab/r-python-eds-lessons-env
 ```
 
 # Contributors
 
 - Leah A. Wasser
 - Filipe Pires Alvarenga Fernandes
+- Nathan Korinek
 - Joseph Tuccillo
 - Gina L. Li
 - Max Joseph
