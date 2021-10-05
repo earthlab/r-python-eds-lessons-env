@@ -46,7 +46,7 @@ on GitHub.
 4. **Open a new pull request on GitHub** with the updated `environment.yml` and `conda-lock` files.
 
 ## Notes on Updating this Environment
-This environment mixes r and python package to support our build. Because of the
+This environment mixes **r** and **python** package to support our build. Because of the
 number of packages, sometimes you can get conflicts when you build it. Because
 of that it's generally a good idea to begin any updates that you need to
 support lessons as soon as you can. If there are conflicts that don't seem to
@@ -54,6 +54,14 @@ be easily resolved, the  next step is to go to the **conda-forge** organization
 on GitHub and post an issues in the feedstock for the package that is throwing
 errors. You can link to the broken build on GitHub for the maintainers to see
 what is causing the issue.  
+
+# GitHub Actions Build, CircleCi & Dockerhub
+Currently this repo has 3 CI builds.
+
+* [build-image.yml](https://github.com/earthlab/r-python-eds-lessons-env/blob/main/.github/workflows/build-image.yml): This build just tests that the image build successfully on all pushes to all branches
+* [build-push-image.yml](https://github.com/earthlab/r-python-eds-lessons-env/blob/main/.github/workflows/build-push-image.yml): This builds the image and then pushes to dockerhub on the `main` branch only. It pushes to the image `:latest`. Note that the latest tag is dangerous because it removes the ability to make each build fully reproducible. All image versions are tagged latest. To build our lessons, we prefer to use a specifically tagged version of the image so we know exactly what image was used.
+* [build-push-release.yml](https://github.com/earthlab/r-python-eds-lessons-env/blob/main/.github/workflows/build-push-release.yml): This action pushes to dockerhub when a tagged release is created. This is the most reproducible way to build lessons as we now always know precisely what environment was used to build the image. IMPORTANT: if you are using the lessons repo and updating lessons and need to update the docker container, be sure to update the image version in the CircleCi.yml file before trying to build. Note that the lessons repo is private right now given we have homework answers in some of the files. 
+
 
 # How to use the docker container by Pulling from DockerHub
 
