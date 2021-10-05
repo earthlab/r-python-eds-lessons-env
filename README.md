@@ -20,10 +20,31 @@ Also, as a side effect, the solve is run only once when creating the lock file l
 
 ## How to Update
 
-1. Install `conda-lock` if you don't already have it: `conda install -c conda-forge conda-lock`
-2. Update the environment file with the new packages of your choice
-3. Run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
-4. Open a new PR with  this new files (lock file and environment.yml file)
+1. Install `conda-lock` if you don't already have it installed: `conda install -c conda-forge conda-lock`
+2. Update the `environment.yml` file with the new packages of your choice. NOTE you can also chose to upgrade packages by forcing an install of version x.x or greater. The syntax in the yaml file would look like this if you wanted to ensure that you had the newest version of earthpy:
+
+`- earthpy >= 0.9.4`
+
+3. **Update the conda-lock  file:** Run `conda-lock -f environment.yml -p linux-64` in bash to update the lock  file
+
+### Test the Docker Build Locally
+Before opening up a Pull Request on GitHub you may want to test the docker build locally.
+To do this:
+
+1. make sure docker is installed on your computer and that you are logged into your account
+2. `$ cd` to the root directory of this repo (you should be there already).
+3. Run: `docker build -t eds .` This command will build the image locally. The image can be called using the tag "eds". If you want to both build and run the image locally you can use:
+
+`docker build -t eds . && docker run -it eds`
+
+Note that you can use whatever tag name you wish. Above **eds** is used. Feel
+free to substitute any other tag name that works for you.
+
+Once the image builds successfully locally, you are ready to open a pull request
+on GitHub.
+4. **Open a new pull request on GitHub** with the updated `environment.yml` and `conda-lock` files.
+
+## Test the Docker container locally
 
 # How to use the docker container
 
