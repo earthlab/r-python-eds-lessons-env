@@ -19,7 +19,6 @@ dependencies:
   - geopandas
   - geopy
   - hydrofunctions
-  - mapboxgl
   - mapclassify
   - nano
   - nbclean
