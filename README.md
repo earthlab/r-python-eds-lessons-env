@@ -37,8 +37,9 @@ To do this:
 
 `docker build -t eds . && docker run -it eds`
 
-Note that you can use whatever tag name you wish. Above **eds** is used. Feel
+* Note that you can use whatever tag name you wish. Above **eds** is used. Feel
 free to substitute any other tag name that works for you.
+* Also note that linux users may need to use `sudo` when running docker commands
 
 Once the image builds successfully locally, you are ready to open a pull request
 on GitHub.
